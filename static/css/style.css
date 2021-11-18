@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+@import url(menu.css);
+@import url(banner.css);
+@import url(info.css);
+@import url(chatbot.css);
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cardo', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 65px;
+    background: #d1b48fe6;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.Contenedor{
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    font-size: 1.5em;
+    float: left;
+    margin: 15px 0;
+}
+
+
+header .Contenedor{
+    display: table;
+}
+
+#bienvenidos h2{
+    font-size: 1.5em;
+}
+
+#bienvenidos p{
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+#border{
+    border-bottom: solid black 3px;
+    width: 85%;
+    display: inline-block;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos{
+    text-align: center;
+}
+
+footer .Contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.copy{
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a{
+    color: #333;
+    text-decoration: none;
+
+}
+
+@media (min-width: 768px){
+
+    #bienvenidos h2{
+        font-size: 2em;
+    }
+    
+    #bienvenidos p{
+        margin-top: 15px;
+        font-size: 1.3em;
+    }
+    
+    #border{
+        border-bottom: solid black 3px;
+        width: 70%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .sociales{
+        width: auto;
+    }
+
+    footer .Contenedor{
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1366px){
+    #bienvenidos h2{
+        font-size: 2.8em;
+    }
+    
+    #bienvenidos p{
+        margin-top: 15px;
+        font-size: 1.8em;
+    }
+    
+    #border{
+        border-bottom: solid black 3px;
+        width: 60%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .Contenedor{
+        width: 1600px;
+    }
+}

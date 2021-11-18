@@ -1,0 +1,27 @@
+{ "contenido":[
+
+                {"tag":"saludos",
+                    "patrones":["Hola"],
+                    "respuestas":["Hola, soy nudito, en que te puedo apoyar?"]
+
+                },
+                {"tag":"pagos",
+                    "patrones":["que formas de pago tienen?"],
+                    "respuestas":["Contamos con pago por paypal, pero estamos trabajando para ampliar nuestas formas de pago"]
+
+                },
+                {"tag":"envios",
+                    "patrones":["cuanto tardan los envios"],
+                    "respuestas":["Dependiendo la zona de 3 a 5 dias"]
+                },
+                {"tag":"despedida",
+                    "patrones":["adios","hasta luego","hasta pronto"],
+                    "respuestas":["adios"]
+
+                }
+
+
+
+
+]
+}

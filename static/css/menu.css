@@ -1,0 +1,159 @@
+#menu_bar{
+    display: none;
+}
+
+#carrito{
+    display: none;
+}
+
+#sesion{
+    display: none;
+}
+
+header .fa-sign-in-alt{
+    float: right;
+    font-size: 23px;
+    margin: 15px 15px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+header .fa-bars{
+    float: right;
+    font-size: 28px;
+    margin: 13px 15px;
+    cursor: pointer;
+}
+
+header .fa-shopping-cart{
+    float: right;
+    font-size: 23px;
+    margin: 15px 15px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.9);
+    transition: all 0.8s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    display: block;
+    color: #fff;
+    height: 65px;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.menu a i{
+    padding-right: 10px;
+}
+
+.menu a:hover{
+    background: rgba(255, 255, 255, 0.3) ;
+}
+
+.car{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.9);
+    transition: all 0.8s;
+    transform: translateX(200%);
+}
+
+.car a{
+    display: block;
+    color: #fff;
+    height: 65px;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.car a i{
+    padding-right: 10px;
+}
+
+.car a:hover{
+    background: rgba(255, 255, 255, 0.3) ;
+}
+
+.sesion{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51, 51, 51, 0.9);
+    transition: all 0.8s;
+    transform: translateX(200%);
+}
+
+.sesion a{
+    display: block;
+    color: #fff;
+    height: 65px;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sesion a i{
+    padding-right: 10px;
+}
+
+.sesion a:hover{
+    background: rgba(255, 255, 255, 0.3) ;
+}
+
+#menu_bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+#carrito:checked ~ .car{
+    transform: translateX(0%);
+}
+
+#sesion:checked ~ .sesion{
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px){
+
+    
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        background: rgba(209, 180, 143, 0);
+        float: right;
+        display: flex;
+    }
+
+    .menu a{
+        border: none;
+    }
+    #carrito:checked ~ .car{
+        transform: translateX(70%);
+    }
+
+    #sesion:checked ~ .sesion{
+        transform: translateX(70%);
+    }
+
+    header .fa-bars{
+        visibility: hidden;
+    }
+}

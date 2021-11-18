@@ -1,0 +1,50 @@
+#chatbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 60px;
+}
+#userInput {
+    width: 100%;
+    margin-top: 60px;
+}
+#textInput {
+    width: 100%;
+    border: none;
+    border: 3px solid #333;
+    font-family: monospace;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.userText {
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 30px;
+}
+
+.botText{
+    font-size: 1.5rem;
+    text-align: left;
+    background-color: #d1b48fe6;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+#tidbit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+.boxed {
+    margin-left: auto;
+    margin-right: auto;
+    width: 78%;
+    margin-top: 60px;
+    border: 1px solid #d1b48fe6;
+}
